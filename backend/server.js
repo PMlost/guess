@@ -430,4 +430,7 @@ process.on("SIGINT", () => {
   process.exit(0);
 });
 
+app.get("/privacy", (req, res) => res.sendFile(__dirname + "/privacy.html"));
+app.get("/terms", (req, res) => res.sendFile(__dirname + "/terms.html"));
+
 startServer();

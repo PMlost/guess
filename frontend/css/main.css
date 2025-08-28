@@ -375,3 +375,32 @@ body {
     opacity: 0;
   }
 }
+/* Footer styles */
+.footer {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 8px 16px;
+
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: linear-gradient(145deg, #45a049, #388e3c);
+  transform: scale(1.05);
+}
