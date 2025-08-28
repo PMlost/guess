@@ -1,0 +1,1369 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "code": "ad",
+      "name": "Andorra",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ad.png"
+    },
+    {
+      "id": 2,
+      "code": "ae",
+      "name": "United Arab Emirates",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ae.png"
+    },
+    {
+      "id": 3,
+      "code": "af",
+      "name": "Afghanistan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/af.png"
+    },
+    {
+      "id": 4,
+      "code": "ag",
+      "name": "Antigua and Barbuda",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ag.png"
+    },
+    {
+      "id": 5,
+      "code": "al",
+      "name": "Albania",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/al.png"
+    },
+    {
+      "id": 6,
+      "code": "am",
+      "name": "Armenia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/am.png"
+    },
+    {
+      "id": 7,
+      "code": "ao",
+      "name": "Angola",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ao.png"
+    },
+    {
+      "id": 8,
+      "code": "ar",
+      "name": "Argentina",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ar.png"
+    },
+    {
+      "id": 9,
+      "code": "at",
+      "name": "Austria",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/at.png"
+    },
+    {
+      "id": 10,
+      "code": "au",
+      "name": "Australia",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/au.png"
+    },
+    {
+      "id": 11,
+      "code": "az",
+      "name": "Azerbaijan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/az.png"
+    },
+    {
+      "id": 12,
+      "code": "ba",
+      "name": "Bosnia and Herzegovina",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ba.png"
+    },
+    {
+      "id": 13,
+      "code": "bb",
+      "name": "Barbados",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bb.png"
+    },
+    {
+      "id": 14,
+      "code": "bd",
+      "name": "Bangladesh",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/bd.png"
+    },
+    {
+      "id": 15,
+      "code": "be",
+      "name": "Belgium",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/be.png"
+    },
+    {
+      "id": 16,
+      "code": "bf",
+      "name": "Burkina Faso",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bf.png"
+    },
+    {
+      "id": 17,
+      "code": "bg",
+      "name": "Bulgaria",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/bg.png"
+    },
+    {
+      "id": 18,
+      "code": "bh",
+      "name": "Bahrain",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/bh.png"
+    },
+    {
+      "id": 19,
+      "code": "bi",
+      "name": "Burundi",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bi.png"
+    },
+    {
+      "id": 20,
+      "code": "bj",
+      "name": "Benin",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bj.png"
+    },
+    {
+      "id": 21,
+      "code": "bn",
+      "name": "Brunei",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/bn.png"
+    },
+    {
+      "id": 22,
+      "code": "bo",
+      "name": "Bolivia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/bo.png"
+    },
+    {
+      "id": 23,
+      "code": "br",
+      "name": "Brazil",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/br.png"
+    },
+    {
+      "id": 24,
+      "code": "bs",
+      "name": "Bahamas",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bs.png"
+    },
+    {
+      "id": 25,
+      "code": "bt",
+      "name": "Bhutan",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bt.png"
+    },
+    {
+      "id": 26,
+      "code": "bw",
+      "name": "Botswana",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bw.png"
+    },
+    {
+      "id": 27,
+      "code": "by",
+      "name": "Belarus",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/by.png"
+    },
+    {
+      "id": 28,
+      "code": "bz",
+      "name": "Belize",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/bz.png"
+    },
+    {
+      "id": 29,
+      "code": "ca",
+      "name": "Canada",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/ca.png"
+    },
+    {
+      "id": 30,
+      "code": "cd",
+      "name": "DR Congo",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cd.png"
+    },
+    {
+      "id": 31,
+      "code": "cf",
+      "name": "Central African Republic",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/cf.png"
+    },
+    {
+      "id": 32,
+      "code": "cg",
+      "name": "Republic of the Congo",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/cg.png"
+    },
+    {
+      "id": 33,
+      "code": "ch",
+      "name": "Switzerland",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/ch.png"
+    },
+    {
+      "id": 34,
+      "code": "ci",
+      "name": "Côte d'Ivoire",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ci.png"
+    },
+    {
+      "id": 35,
+      "code": "cl",
+      "name": "Chile",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cl.png"
+    },
+    {
+      "id": 36,
+      "code": "cm",
+      "name": "Cameroon",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cm.png"
+    },
+    {
+      "id": 37,
+      "code": "cn",
+      "name": "China",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/cn.png"
+    },
+    {
+      "id": 38,
+      "code": "co",
+      "name": "Colombia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/co.png"
+    },
+    {
+      "id": 39,
+      "code": "cr",
+      "name": "Costa Rica",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cr.png"
+    },
+    {
+      "id": 40,
+      "code": "cu",
+      "name": "Cuba",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cu.png"
+    },
+    {
+      "id": 41,
+      "code": "cv",
+      "name": "Cape Verde",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/cv.png"
+    },
+    {
+      "id": 42,
+      "code": "cy",
+      "name": "Cyprus",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cy.png"
+    },
+    {
+      "id": 43,
+      "code": "cz",
+      "name": "Czechia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/cz.png"
+    },
+    {
+      "id": 44,
+      "code": "de",
+      "name": "Germany",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/de.png"
+    },
+    {
+      "id": 45,
+      "code": "dj",
+      "name": "Djibouti",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/dj.png"
+    },
+    {
+      "id": 46,
+      "code": "dk",
+      "name": "Denmark",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/dk.png"
+    },
+    {
+      "id": 47,
+      "code": "dm",
+      "name": "Dominica",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/dm.png"
+    },
+    {
+      "id": 48,
+      "code": "do",
+      "name": "Dominican Republic",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/do.png"
+    },
+    {
+      "id": 49,
+      "code": "dz",
+      "name": "Algeria",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/dz.png"
+    },
+    {
+      "id": 50,
+      "code": "ec",
+      "name": "Ecuador",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ec.png"
+    },
+    {
+      "id": 51,
+      "code": "ee",
+      "name": "Estonia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ee.png"
+    },
+    {
+      "id": 52,
+      "code": "eg",
+      "name": "Egypt",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/eg.png"
+    },
+    {
+      "id": 53,
+      "code": "er",
+      "name": "Eritrea",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/er.png"
+    },
+    {
+      "id": 54,
+      "code": "es",
+      "name": "Spain",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/es.png"
+    },
+    {
+      "id": 55,
+      "code": "et",
+      "name": "Ethiopia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/et.png"
+    },
+    {
+      "id": 56,
+      "code": "fi",
+      "name": "Finland",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/fi.png"
+    },
+    {
+      "id": 57,
+      "code": "fj",
+      "name": "Fiji",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/fj.png"
+    },
+    {
+      "id": 58,
+      "code": "fm",
+      "name": "Micronesia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/fm.png"
+    },
+    {
+      "id": 59,
+      "code": "fr",
+      "name": "France",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/fr.png"
+    },
+    {
+      "id": 60,
+      "code": "ga",
+      "name": "Gabon",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ga.png"
+    },
+    {
+      "id": 61,
+      "code": "gb",
+      "name": "United Kingdom",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/gb.png"
+    },
+    {
+      "id": 62,
+      "code": "gd",
+      "name": "Grenada",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gd.png"
+    },
+    {
+      "id": 63,
+      "code": "ge",
+      "name": "Georgia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ge.png"
+    },
+    {
+      "id": 64,
+      "code": "gh",
+      "name": "Ghana",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/gh.png"
+    },
+    {
+      "id": 65,
+      "code": "gm",
+      "name": "Gambia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gm.png"
+    },
+    {
+      "id": 66,
+      "code": "gn",
+      "name": "Guinea",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gn.png"
+    },
+    {
+      "id": 67,
+      "code": "gq",
+      "name": "Equatorial Guinea",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gq.png"
+    },
+    {
+      "id": 68,
+      "code": "gr",
+      "name": "Greece",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/gr.png"
+    },
+    {
+      "id": 69,
+      "code": "gt",
+      "name": "Guatemala",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/gt.png"
+    },
+    {
+      "id": 70,
+      "code": "gw",
+      "name": "Guinea-Bissau",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gw.png"
+    },
+    {
+      "id": 71,
+      "code": "gy",
+      "name": "Guyana",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/gy.png"
+    },
+    {
+      "id": 72,
+      "code": "hn",
+      "name": "Honduras",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/hn.png"
+    },
+    {
+      "id": 73,
+      "code": "hr",
+      "name": "Croatia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/hr.png"
+    },
+    {
+      "id": 74,
+      "code": "ht",
+      "name": "Haiti",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ht.png"
+    },
+    {
+      "id": 75,
+      "code": "hu",
+      "name": "Hungary",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/hu.png"
+    },
+    {
+      "id": 76,
+      "code": "id",
+      "name": "Indonesia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/id.png"
+    },
+    {
+      "id": 77,
+      "code": "ie",
+      "name": "Ireland",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ie.png"
+    },
+    {
+      "id": 78,
+      "code": "il",
+      "name": "Israel",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/il.png"
+    },
+    {
+      "id": 79,
+      "code": "in",
+      "name": "India",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/in.png"
+    },
+    {
+      "id": 80,
+      "code": "iq",
+      "name": "Iraq",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/iq.png"
+    },
+    {
+      "id": 81,
+      "code": "ir",
+      "name": "Iran",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ir.png"
+    },
+    {
+      "id": 82,
+      "code": "is",
+      "name": "Iceland",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/is.png"
+    },
+    {
+      "id": 83,
+      "code": "it",
+      "name": "Italy",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/it.png"
+    },
+    {
+      "id": 84,
+      "code": "jm",
+      "name": "Jamaica",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/jm.png"
+    },
+    {
+      "id": 85,
+      "code": "jo",
+      "name": "Jordan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/jo.png"
+    },
+    {
+      "id": 86,
+      "code": "jp",
+      "name": "Japan",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/jp.png"
+    },
+    {
+      "id": 87,
+      "code": "ke",
+      "name": "Kenya",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ke.png"
+    },
+    {
+      "id": 88,
+      "code": "kg",
+      "name": "Kyrgyzstan",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/kg.png"
+    },
+    {
+      "id": 89,
+      "code": "kh",
+      "name": "Cambodia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/kh.png"
+    },
+    {
+      "id": 90,
+      "code": "ki",
+      "name": "Kiribati",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ki.png"
+    },
+    {
+      "id": 91,
+      "code": "km",
+      "name": "Comoros",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/km.png"
+    },
+    {
+      "id": 92,
+      "code": "kn",
+      "name": "Saint Kitts and Nevis",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/kn.png"
+    },
+    {
+      "id": 93,
+      "code": "kp",
+      "name": "North Korea",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/kp.png"
+    },
+    {
+      "id": 94,
+      "code": "kr",
+      "name": "South Korea",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/kr.png"
+    },
+    {
+      "id": 95,
+      "code": "kw",
+      "name": "Kuwait",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/kw.png"
+    },
+    {
+      "id": 96,
+      "code": "kz",
+      "name": "Kazakhstan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/kz.png"
+    },
+    {
+      "id": 97,
+      "code": "la",
+      "name": "Laos",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/la.png"
+    },
+    {
+      "id": 98,
+      "code": "lb",
+      "name": "Lebanon",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/lb.png"
+    },
+    {
+      "id": 99,
+      "code": "lc",
+      "name": "Saint Lucia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/lc.png"
+    },
+    {
+      "id": 100,
+      "code": "li",
+      "name": "Liechtenstein",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/li.png"
+    },
+    {
+      "id": 101,
+      "code": "lk",
+      "name": "Sri Lanka",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/lk.png"
+    },
+    {
+      "id": 102,
+      "code": "lr",
+      "name": "Liberia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/lr.png"
+    },
+    {
+      "id": 103,
+      "code": "ls",
+      "name": "Lesotho",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ls.png"
+    },
+    {
+      "id": 104,
+      "code": "lt",
+      "name": "Lithuania",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/lt.png"
+    },
+    {
+      "id": 105,
+      "code": "lu",
+      "name": "Luxembourg",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/lu.png"
+    },
+    {
+      "id": 106,
+      "code": "lv",
+      "name": "Latvia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/lv.png"
+    },
+    {
+      "id": 107,
+      "code": "ly",
+      "name": "Libya",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ly.png"
+    },
+    {
+      "id": 108,
+      "code": "ma",
+      "name": "Morocco",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ma.png"
+    },
+    {
+      "id": 109,
+      "code": "mc",
+      "name": "Monaco",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mc.png"
+    },
+    {
+      "id": 110,
+      "code": "md",
+      "name": "Moldova",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/md.png"
+    },
+    {
+      "id": 111,
+      "code": "me",
+      "name": "Montenegro",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/me.png"
+    },
+    {
+      "id": 112,
+      "code": "mg",
+      "name": "Madagascar",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/mg.png"
+    },
+    {
+      "id": 113,
+      "code": "mh",
+      "name": "Marshall Islands",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mh.png"
+    },
+    {
+      "id": 114,
+      "code": "mk",
+      "name": "North Macedonia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/mk.png"
+    },
+    {
+      "id": 115,
+      "code": "ml",
+      "name": "Mali",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ml.png"
+    },
+    {
+      "id": 116,
+      "code": "mm",
+      "name": "Myanmar",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/mm.png"
+    },
+    {
+      "id": 117,
+      "code": "mn",
+      "name": "Mongolia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/mn.png"
+    },
+    {
+      "id": 118,
+      "code": "mr",
+      "name": "Mauritania",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mr.png"
+    },
+    {
+      "id": 119,
+      "code": "mt",
+      "name": "Malta",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/mt.png"
+    },
+    {
+      "id": 120,
+      "code": "mu",
+      "name": "Mauritius",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mu.png"
+    },
+    {
+      "id": 121,
+      "code": "mv",
+      "name": "Maldives",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mv.png"
+    },
+    {
+      "id": 122,
+      "code": "mw",
+      "name": "Malawi",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mw.png"
+    },
+    {
+      "id": 123,
+      "code": "mx",
+      "name": "Mexico",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/mx.png"
+    },
+    {
+      "id": 124,
+      "code": "my",
+      "name": "Malaysia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/my.png"
+    },
+    {
+      "id": 125,
+      "code": "mz",
+      "name": "Mozambique",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/mz.png"
+    },
+    {
+      "id": 126,
+      "code": "na",
+      "name": "Namibia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/na.png"
+    },
+    {
+      "id": 127,
+      "code": "ne",
+      "name": "Niger",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ne.png"
+    },
+    {
+      "id": 128,
+      "code": "ng",
+      "name": "Nigeria",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ng.png"
+    },
+    {
+      "id": 129,
+      "code": "ni",
+      "name": "Nicaragua",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ni.png"
+    },
+    {
+      "id": 130,
+      "code": "nl",
+      "name": "Netherlands",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/nl.png"
+    },
+    {
+      "id": 131,
+      "code": "no",
+      "name": "Norway",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/no.png"
+    },
+    {
+      "id": 132,
+      "code": "np",
+      "name": "Nepal",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/np.png"
+    },
+    {
+      "id": 133,
+      "code": "nr",
+      "name": "Nauru",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/nr.png"
+    },
+    {
+      "id": 134,
+      "code": "nz",
+      "name": "New Zealand",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/nz.png"
+    },
+    {
+      "id": 135,
+      "code": "om",
+      "name": "Oman",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/om.png"
+    },
+    {
+      "id": 136,
+      "code": "pa",
+      "name": "Panama",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/pa.png"
+    },
+    {
+      "id": 137,
+      "code": "pe",
+      "name": "Peru",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/pe.png"
+    },
+    {
+      "id": 138,
+      "code": "pg",
+      "name": "Papua New Guinea",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/pg.png"
+    },
+    {
+      "id": 139,
+      "code": "ph",
+      "name": "Philippines",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ph.png"
+    },
+    {
+      "id": 140,
+      "code": "pk",
+      "name": "Pakistan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/pk.png"
+    },
+    {
+      "id": 141,
+      "code": "pl",
+      "name": "Poland",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/pl.png"
+    },
+    {
+      "id": 142,
+      "code": "pt",
+      "name": "Portugal",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/pt.png"
+    },
+    {
+      "id": 143,
+      "code": "pw",
+      "name": "Palau",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/pw.png"
+    },
+    {
+      "id": 144,
+      "code": "py",
+      "name": "Paraguay",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/py.png"
+    },
+    {
+      "id": 145,
+      "code": "qa",
+      "name": "Qatar",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/qa.png"
+    },
+    {
+      "id": 146,
+      "code": "ro",
+      "name": "Romania",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ro.png"
+    },
+    {
+      "id": 147,
+      "code": "rs",
+      "name": "Serbia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/rs.png"
+    },
+    {
+      "id": 148,
+      "code": "ru",
+      "name": "Russia",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/ru.png"
+    },
+    {
+      "id": 149,
+      "code": "rw",
+      "name": "Rwanda",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/rw.png"
+    },
+    {
+      "id": 150,
+      "code": "sa",
+      "name": "Saudi Arabia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sa.png"
+    },
+    {
+      "id": 151,
+      "code": "sb",
+      "name": "Solomon Islands",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sb.png"
+    },
+    {
+      "id": 152,
+      "code": "sc",
+      "name": "Seychelles",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sc.png"
+    },
+    {
+      "id": 153,
+      "code": "sd",
+      "name": "Sudan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sd.png"
+    },
+    {
+      "id": 154,
+      "code": "se",
+      "name": "Sweden",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/se.png"
+    },
+    {
+      "id": 155,
+      "code": "sg",
+      "name": "Singapore",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sg.png"
+    },
+    {
+      "id": 156,
+      "code": "si",
+      "name": "Slovenia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/si.png"
+    },
+    {
+      "id": 157,
+      "code": "sk",
+      "name": "Slovakia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sk.png"
+    },
+    {
+      "id": 158,
+      "code": "sl",
+      "name": "Sierra Leone",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sl.png"
+    },
+    {
+      "id": 159,
+      "code": "sm",
+      "name": "San Marino",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sm.png"
+    },
+    {
+      "id": 160,
+      "code": "sn",
+      "name": "Senegal",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sn.png"
+    },
+    {
+      "id": 161,
+      "code": "so",
+      "name": "Somalia",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/so.png"
+    },
+    {
+      "id": 162,
+      "code": "sr",
+      "name": "Suriname",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sr.png"
+    },
+    {
+      "id": 163,
+      "code": "ss",
+      "name": "South Sudan",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ss.png"
+    },
+    {
+      "id": 164,
+      "code": "st",
+      "name": "São Tomé and Príncipe",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/st.png"
+    },
+    {
+      "id": 165,
+      "code": "sv",
+      "name": "El Salvador",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sv.png"
+    },
+    {
+      "id": 166,
+      "code": "sy",
+      "name": "Syria",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/sy.png"
+    },
+    {
+      "id": 167,
+      "code": "sz",
+      "name": "Eswatini",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/sz.png"
+    },
+    {
+      "id": 168,
+      "code": "td",
+      "name": "Chad",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/td.png"
+    },
+    {
+      "id": 169,
+      "code": "tg",
+      "name": "Togo",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/tg.png"
+    },
+    {
+      "id": 170,
+      "code": "th",
+      "name": "Thailand",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/th.png"
+    },
+    {
+      "id": 171,
+      "code": "tj",
+      "name": "Tajikistan",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/tj.png"
+    },
+    {
+      "id": 172,
+      "code": "tl",
+      "name": "Timor-Leste",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/tl.png"
+    },
+    {
+      "id": 173,
+      "code": "tm",
+      "name": "Turkmenistan",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/tm.png"
+    },
+    {
+      "id": 174,
+      "code": "tn",
+      "name": "Tunisia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/tn.png"
+    },
+    {
+      "id": 175,
+      "code": "to",
+      "name": "Tonga",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/to.png"
+    },
+    {
+      "id": 176,
+      "code": "tr",
+      "name": "Turkey",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/tr.png"
+    },
+    {
+      "id": 177,
+      "code": "tt",
+      "name": "Trinidad and Tobago",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/tt.png"
+    },
+    {
+      "id": 178,
+      "code": "tv",
+      "name": "Tuvalu",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/tv.png"
+    },
+    {
+      "id": 179,
+      "code": "tw",
+      "name": "Taiwan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/tw.png"
+    },
+    {
+      "id": 180,
+      "code": "tz",
+      "name": "Tanzania",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/tz.png"
+    },
+    {
+      "id": 181,
+      "code": "ua",
+      "name": "Ukraine",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ua.png"
+    },
+    {
+      "id": 182,
+      "code": "ug",
+      "name": "Uganda",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ug.png"
+    },
+    {
+      "id": 183,
+      "code": "us",
+      "name": "United States",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/us.png"
+    },
+    {
+      "id": 184,
+      "code": "uy",
+      "name": "Uruguay",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/uy.png"
+    },
+    {
+      "id": 185,
+      "code": "uz",
+      "name": "Uzbekistan",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/uz.png"
+    },
+    {
+      "id": 186,
+      "code": "va",
+      "name": "Vatican City",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/va.png"
+    },
+    {
+      "id": 187,
+      "code": "vc",
+      "name": "Saint Vincent and the Grenadines",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/vc.png"
+    },
+    {
+      "id": 188,
+      "code": "ve",
+      "name": "Venezuela",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ve.png"
+    },
+    {
+      "id": 189,
+      "code": "vn",
+      "name": "Vietnam",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/vn.png"
+    },
+    {
+      "id": 190,
+      "code": "vu",
+      "name": "Vanuatu",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/vu.png"
+    },
+    {
+      "id": 191,
+      "code": "ws",
+      "name": "Samoa",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/ws.png"
+    },
+    {
+      "id": 192,
+      "code": "xk",
+      "name": "Kosovo",
+      "difficulty": "hard",
+      "flag": "https://flagcdn.com/192x144/xk.png"
+    },
+    {
+      "id": 193,
+      "code": "ye",
+      "name": "Yemen",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/ye.png"
+    },
+    {
+      "id": 194,
+      "code": "za",
+      "name": "South Africa",
+      "difficulty": "easy",
+      "flag": "https://flagcdn.com/192x144/za.png"
+    },
+    {
+      "id": 195,
+      "code": "zm",
+      "name": "Zambia",
+      "difficulty": "medium",
+      "flag": "https://flagcdn.com/192x144/zm.png"
+    }
+  ]
+}

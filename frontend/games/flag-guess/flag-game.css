@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1a3b0c 0%, #2d5016 50%, #4a7c59 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  overscroll-behavior: none;
+  touch-action: pan-y;
+}
+
+/* Forest Background */
+.forest-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      ellipse at bottom,
+      rgba(76, 175, 80, 0.1) 0%,
+      transparent 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(46, 125, 50, 0.3) 0%,
+      rgba(27, 94, 32, 0.5) 100%
+    );
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 20px 20px; /* Added top padding for the home button */
+  background: rgba(27, 94, 32, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(144, 238, 144, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  position: relative; /* For absolute positioning of home button */
+}
+
+.back-btn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: linear-gradient(145deg, #2e7d32, #1b5e20);
+  color: #90ee90;
+  border: 2px solid rgba(144, 238, 144, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #4caf50, #2e7d32);
+  border-color: rgba(144, 238, 144, 0.5);
+}
+
+.back-btn:before {
+  content: "🏠 ";
+  margin-right: 5px;
+}
+
+.game-title {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  color: #90ee90;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.score-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #b8e6b8;
+  font-weight: 600;
+}
+
+.high-score {
+  background: rgba(255, 215, 0, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+/* Lives Display */
+.lives-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.life {
+  font-size: 1.5rem;
+  animation: heartbeat 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.life.lost {
+  opacity: 0.3;
+  transform: scale(0.7);
+  animation: none;
+}
+
+.life.losing {
+  animation: loseLife 0.8s ease-out;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes loseLife {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.7) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+/* Difficulty Selector */
+.difficulty-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.difficulty-btn {
+  background: linear-gradient(145deg, #4caf50, #45a049);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Fredoka One", cursive;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.difficulty-btn:hover:not(.locked) {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.difficulty-btn.active {
+  background: linear-gradient(145deg, #ff9800, #f57c00);
+  box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+}
+
+.difficulty-btn.locked {
+  background: linear-gradient(145deg, #666, #555);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.difficulty-btn.locked::after {
+  content: "🔒";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 1rem;
+}
+
+/* Game Container */
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  overscroll-behavior: none;
+}
+
+.question-counter {
+  color: #b8e6b8;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.flag-container {
+  background: rgba(27, 94, 32, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(144, 238, 144, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* .flag-display {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(144, 238, 144, 0.3);
+  overflow: hidden;
+  position: relative;
+} */
+
+.flag-img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.flag-img:hover {
+  transform: scale(1.05);
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.option-btn {
+  background: linear-gradient(
+    145deg,
+    rgba(46, 125, 50, 0.8),
+    rgba(27, 94, 32, 0.8)
+  );
+  color: #b8e6b8;
+  border: 2px solid rgba(144, 238, 144, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.option-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(144, 238, 144, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(76, 175, 80, 0.8),
+    rgba(46, 125, 50, 0.8)
+  );
+}
+
+.option-btn.correct {
+  background: linear-gradient(145deg, #4caf50, #45a049);
+  border-color: #66bb6a;
+  animation: correctAnswer 0.6s ease;
+}
+
+.option-btn.wrong {
+  background: linear-gradient(145deg, #f44336, #d32f2f);
+  border-color: #ef5350;
+  animation: wrongAnswer 0.8s ease;
+}
+
+.option-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@keyframes correctAnswer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wrongAnswer {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px) rotate(-2deg);
+  }
+  75% {
+    transform: translateX(10px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+/* Next Button */
+.next-btn {
+  background: linear-gradient(145deg, #ff9800, #f57c00);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Fredoka One", cursive;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 30px 10px;
+  display: none;
+}
+
+.next-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.next-btn.show {
+  display: inline-block;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal.show {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: linear-gradient(
+    145deg,
+    rgba(46, 125, 50, 0.95),
+    rgba(27, 94, 32, 0.95)
+  );
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px;
+  border: 2px solid rgba(144, 238, 144, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.modal h2 {
+  font-family: "Fredoka One", cursive;
+  color: #90ee90;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  color: #b8e6b8;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.modal-btn {
+  background: linear-gradient(145deg, #4caf50, #45a049);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-family: "Fredoka One", cursive;
+}
+.modal-btn.ad-btn.disabled {
+  background: linear-gradient(145deg, #666, #555);
+  opacity: 0.6;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.modal-btn.ad-btn.disabled::after {
+  content: "Coming Soon";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-btn.secondary {
+  background: linear-gradient(145deg, #666, #555);
+}
+
+.modal-btn.ad-btn {
+  background: linear-gradient(145deg, #ff9800, #f57c00);
+}
+
+/* Correct Answer Popup */
+.correct-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #4caf50, #45a049);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 500;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: none;
+  font-family: "Fredoka One", cursive;
+}
+
+/* Wrong Answer Popup */
+.wrong-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #f44336, #d32f2f);
+  color: white;
+  padding: 25px 45px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 500;
+  box-shadow: 0 15px 40px rgba(244, 67, 54, 0.4);
+  display: none;
+  font-family: "Fredoka One", cursive;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.wrong-popup.show {
+  display: block;
+  animation: wrongPopupShow 2s ease;
+}
+
+@keyframes wrongPopupShow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5) rotate(-10deg);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2) rotate(5deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(0.9) rotate(-2deg);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.1) rotate(1deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.correct-popup.show {
+  display: block;
+  animation: popupShow 1.5s ease;
+}
+
+@keyframes popupShow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #90ee90);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 50px 15px 15px 15px;
+  }
+
+  .difficulty-selector {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .difficulty-btn {
+    padding: 16px 22px;
+    font-size: 0.9rem;
+  }
+
+  .game-container {
+    padding: 10px;
+  }
+
+  /* .flag-display {
+    width: 200px;
+    height: 134px;
+    margin: 0 auto 20px auto;
+  } */
+
+  .flag-container {
+    padding: 20px 15px;
+  }
+
+  .options-container {
+    /* grid-template-columns: 1fr; */
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .option-btn {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .game-title {
+    font-size: 1.3rem;
+  }
+
+  .next-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    margin: 20px 5px;
+  }
+
+  .modal-content {
+    padding: 25px;
+    margin: 15px;
+  }
+
+  .modal h2 {
+    font-size: 1.8rem;
+  }
+  .back-btn {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Add extra small screens */
+@media (max-width: 480px) {
+  /* .flag-display {
+    width: 160px;
+    height: 107px;
+  } */
+
+  .game-container {
+    padding: 5px;
+  }
+
+  .flag-container {
+    padding: 15px 10px;
+  }
+  .back-btn {
+    top: 9px;
+    left: 5px;
+    padding: 7px 9px;
+    font-size: 0.55rem;
+  }
+}
+
+/* Loading Animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(144, 238, 144, 0.3);
+  border-top: 3px solid #90ee90;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* //timer */
+
+/* Timer styles */
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  gap: 10px;
+}
+
+.timer-icon {
+  font-size: 1.5rem;
+  color: #4caf50;
+}
+
+#timerCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+#timerValue {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 600px) {
+  #timerCircle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-width: 3px;
+  }
+  .timer-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animate color change */
+.timer-warning {
+  border-color: #ff9800 !important;
+  color: #ff9800;
+}
+.timer-danger {
+  border-color: #f44336 !important;
+  color: #f44336;
+}
+
+/* SVG Circular Timer */
+#timerCircle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.timer-svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.timer-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3;
+}
+
+.timer-progress {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke 0.3s;
+}
+
+#timerValue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Mobile scaling */
+@media (max-width: 600px) {
+  #timerCircle {
+    width: 45px;
+    height: 45px;
+  }
+  #timerValue {
+    font-size: 1rem;
+  }
+}
+
+/* //timer ends */

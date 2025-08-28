@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessPop - Flag Challenge</title>
+    <link rel="stylesheet" href="./flag-game.css" />
+  </head>
+  <body>
+    <div class="forest-bg"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <button class="back-btn" onclick="goBack()">← Back to Games</button>
+
+      <h1 class="game-title">🏳️ Flag Challenge</h1>
+
+      <div class="score-display">
+        <div class="high-score">🏆 Best: <span id="highScore">0</span></div>
+        <div>Score: <span id="currentScore">0</span></div>
+        <div class="lives-container">
+          <span id="livesDisplay"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Difficulty Selector -->
+    <div class="difficulty-selector">
+      <button
+        class="difficulty-btn active"
+        id="easyBtn"
+        onclick="selectDifficulty('easy')"
+      >
+        🟢 Easy (3 ❤️)
+      </button>
+      <button
+        class="difficulty-btn locked"
+        id="mediumBtn"
+        onclick="selectDifficulty('medium')"
+      >
+        🟡 Medium (2 ❤️)
+      </button>
+      <button
+        class="difficulty-btn locked"
+        id="hardBtn"
+        onclick="selectDifficulty('hard')"
+      >
+        🔴 Hard (1 ❤️)
+      </button>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container">
+      <div class="question-counter">
+        Question <span id="questionNum">1</span> of
+        <span id="totalQuestions">10</span>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="timer-container">
+        <div class="timer-icon">⏳</div>
+        <div id="timerCircle">
+          <svg class="timer-svg" viewBox="0 0 36 36">
+            <path
+              class="timer-bg"
+              d="M18 2.0845
+         a 15.9155 15.9155 0 0 1 0 31.831
+         a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              id="timerPath"
+              class="timer-progress"
+              stroke-dasharray="100, 100"
+              d="M18 2.0845
+         a 15.9155 15.9155 0 0 1 0 31.831
+         a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+          </svg>
+          <span id="timerValue">5</span>
+        </div>
+      </div>
+
+      <div class="flag-container">
+        <div class="flag-display">
+          <img class="flag-img" id="flagImg" src="" alt="Flag to guess" />
+        </div>
+
+        <div class="options-container" id="optionsContainer">
+          <!-- Options will be populated by JavaScript -->
+        </div>
+
+        <button class="next-btn" id="nextBtn" onclick="nextQuestion()">
+          Next Question →
+        </button>
+      </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="gameOverModal">
+      <div class="modal-content">
+        <h2 id="gameOverTitle">💔 Game Over!</h2>
+        <p id="gameOverMessage">
+          You've run out of lives! But don't worry, you can try again.
+        </p>
+        <div class="modal-buttons">
+          <button class="modal-btn" onclick="restartGame()">
+            🔄 Try Again
+          </button>
+          <button
+            class="modal-btn ad-btn disabled"
+            id="adBtn"
+            onclick="watchAd()"
+            style="display: none"
+          >
+            📺 Watch Ad for Extra Life
+          </button>
+          <button class="modal-btn secondary" onclick="goBack()">← Home</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level Complete Modal -->
+    <div class="modal" id="levelCompleteModal">
+      <div class="modal-content">
+        <h2>🎉 Level Complete!</h2>
+        <p id="levelCompleteMessage">
+          Congratulations! You've completed the easy level!
+        </p>
+        <div class="modal-buttons">
+          <button class="modal-btn" onclick="nextLevel()">🎯 Next Level</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Correct Answer Popup -->
+    <div class="correct-popup" id="correctPopup">🎉 Correct!</div>
+
+    <!-- Wrong Answer Popup -->
+    <div class="wrong-popup" id="wrongPopup">❌ Wrong Answer!</div>
+
+    <script src="./flag-game.js" defer></script>
+  </body>
+</html>
