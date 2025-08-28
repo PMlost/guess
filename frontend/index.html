@@ -205,6 +205,11 @@
       </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+
+    <script src="https://sdk.minepi.com/pi-sdk.js" defer></script>
+    <script>
+      Pi.init({ version: "2.0", sandbox: true });
+    </script>
   </body>
 </html>

@@ -176,6 +176,19 @@ app.get("/api/questions/:difficulty/:count", (req, res) => {
   }
 });
 
+// --- Pi Payments Routes ---
+app.post("/api/payment/approve", (req, res) => {
+  console.log("Payment approval request:", req.body);
+  // TODO: verify payment with Pi Servers before approving
+  res.json({ success: true });
+});
+
+app.post("/api/payment/complete", (req, res) => {
+  console.log("Payment completion request:", req.body);
+  // TODO: mark payment as completed in DB
+  res.json({ success: true });
+});
+
 // Save user score
 app.post("/api/scores", (req, res) => {
   try {

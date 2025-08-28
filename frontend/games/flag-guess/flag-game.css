@@ -801,3 +801,32 @@ body {
 }
 
 /* //timer ends */
+
+/* /* // greeting  message */
+#greeting,
+#userGreeting {
+  margin-top: 10px;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.2rem;
+  color: #ffd700; /* golden for contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fadeInDown 1s ease-out forwards;
+  opacity: 0;
+}
+
+#greeting.show,
+#userGreeting.show {
+  opacity: 1;
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

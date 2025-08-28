@@ -32,6 +32,8 @@ class FlagGame {
     );
 
     this.init();
+    // --- Pi Authentication ---
+    this.authenticatePi();
   }
 
   async init() {
@@ -46,6 +48,26 @@ class FlagGame {
     this.updateDifficultyButtons();
     await this.generateQuestions();
     this.displayQuestion();
+  }
+
+  // Authenticate Pi user and save username/token
+  async authenticatePi() {
+    const scopes = ["username", "payments"];
+    try {
+      const auth = await Pi.authenticate(scopes, (payment) => {
+        console.log("Incomplete payment found:", payment);
+      });
+      this.piUser = auth.user;
+      this.piAccessToken = auth.accessToken;
+      console.log("Authenticated Pi User:", this.piUser.username);
+      document.getElementById("username").textContent = this.piUser.username;
+
+      // Show animated greeting
+      const greetingEl = document.getElementById("userGreeting");
+      greetingEl.classList.add("show");
+    } catch (err) {
+      console.error("Pi Auth failed:", err);
+    }
   }
 
   async loadCountries() {
@@ -406,6 +428,9 @@ class FlagGame {
   }
 
   watchAd() {
+    // --- Optionally integrate Pi Payment instead of ad ---
+    // this.createPiPayment();
+
     // Pause timer immediately when ad starts
     this.pauseTimer();
 
@@ -475,6 +500,39 @@ class FlagGame {
         }
       }, 2000);
     }, 3000); // fake ad duration
+  }
+
+  // Example: unlock extra life using Pi
+  createPiPayment() {
+    const paymentData = {
+      amount: 0.01, // test Pi
+      memo: "Extra life in Flag Game",
+      metadata: { feature: "extraLife" },
+    };
+
+    const paymentCallbacks = {
+      onReadyForServerApproval: (paymentDTO) => {
+        fetch("/api/payment/approve", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(paymentDTO),
+        });
+      },
+      onReadyForServerCompletion: (paymentDTO, txid) => {
+        fetch("/api/payment/complete", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ paymentDTO, txid }),
+        });
+      },
+      onCancel: (paymentDTO) => console.log("Payment cancelled", paymentDTO),
+      onError: (err, paymentDTO) =>
+        console.error("Payment error", err, paymentDTO),
+      onIncompletePaymentFound: (paymentDTO) =>
+        console.log("Found incomplete payment", paymentDTO),
+    };
+
+    Pi.createPayment(paymentData, paymentCallbacks);
   }
 
   completeLevel() {
